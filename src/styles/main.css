@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&family=Quicksand:wght@500;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  padding: 8px;
+  background-color: #79AC78;
+  color: white;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+.header {
+  min-height: 48px;
+  transition: min-height 0.3s;
+  background-color: #618264;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu button {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.header-inner {
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-title {
+  color: white;
+  font-weight: 500;
+  font-size: 3em;
+  margin: 0.5em 0.25em;
+  display: inline-block;
+}
+
+.header-menu {
+  min-width: 44px;
+  min-height: 44px;
+  color: white;
+  font-weight: 500;
+  font-size: 1.75em;
+  margin: 0.25em 0em 0.25em 0.5em;
+  display: inline-block;
+}
+
+#menu {
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 1.25em;
+  color: white;
+}
+
+.nav {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.nav-list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.nav a {
+  display: inline-block;
+  padding: 1.2em;
+  text-decoration: none;
+  color: #79AC78;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.nav-item a:hover {
+  text-decoration: underline !important;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.hero-inner {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.hero img {
+  width: 100%;
+  padding-bottom: 2em;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contents {
+  padding: 32px;
+}
+
+.content-title {
+  font-size: 32px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.content-title::after {
+  content: '';
+  margin-top: 16px;
+  display: block;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #db0000;
+
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.restaurant-detail .restaurant-info {
+  padding-top: 1em;
+}
+
+.restaurant-detail .restaurant-info h3 {
+  padding-top: 0.5em;
+}
+
+.restaurant-detail .restaurant-categories {
+  padding-top: 1em;
+}
+
+.restaurant-detail .restaurant-menus {
+  padding-top: 1em;
+}
+
+.restaurant-categories ol {
+  padding-left: 1em;
+}
+
+.restaurant-menus ol {
+  padding-left: 1em;
+}
+
+.restaurant-reviews {
+  padding-top: 1em;
+}
+
+.review-card {
+  padding: 1em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1em 1em;
+}
+
+
+.restaurant-list {
+  margin: 32px auto auto;
+  text-align: left;
+}
+
+.restaurant-item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 1em 1em;
+  padding: 1em;
+}
+
+.restaurant-item a {
+  text-decoration: none;
+  color: black;
+}
+
+.restaurant-photo {
+  width: 100%;
+}
+
+.restaurant-name {
+  font-weight: 500;
+  font-size: 24px;
+  margin-top: 12px;
+  transition: 0.3s opacity;
+}
+
+.restaurant-city,
+.restaurant-rating {
+  font-size: 12px;
+  padding-top: 1em;
+  padding-right: 1.5em;
+  text-transform: uppercase;
+  color: black;
+  display: inline-block;
+}
+
+.restaurant-description {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+footer {
+  background-color: #618264;
+  padding: 2em;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
